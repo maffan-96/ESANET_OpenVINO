@@ -1,0 +1,2919 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="depth" output_port_id="depth" />
+		<IR name="depth" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="rgb" output_port_id="rgb" />
+		<IR name="rgb" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1552" output_port_id="onnx::Conv_1552" />
+		<IR name="onnx::Conv_1552" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/conv1/Conv" output_port_id="/conv1/Conv_output_0" />
+		<IR name="/conv1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/activation/Relu" output_port_id="/activation/Relu_output_0" />
+		<IR name="/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_rgb/GlobalAveragePool" output_port_id="/se_layer0/se_rgb/GlobalAveragePool_output_0" />
+		<IR name="/se_layer0/se_rgb/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer0.se_rgb.fc.0.weight" output_port_id="se_layer0.se_rgb.fc.0.weight" />
+		<IR name="se_layer0.se_rgb.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_rgb/fc/fc.0/Conv" output_port_id="/se_layer0/se_rgb/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer0/se_rgb/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_rgb/fc/activation/Relu" output_port_id="/se_layer0/se_rgb/fc/activation/Relu_output_0" />
+		<IR name="/se_layer0/se_rgb/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer0.se_rgb.fc.2.weight" output_port_id="se_layer0.se_rgb.fc.2.weight" />
+		<IR name="se_layer0.se_rgb.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_rgb/fc/fc.2/Conv" output_port_id="/se_layer0/se_rgb/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer0/se_rgb/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_rgb/fc/fc.3/Sigmoid" output_port_id="/se_layer0/se_rgb/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer0/se_rgb/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_rgb/Mul" output_port_id="/se_layer0/se_rgb/Mul_output_0" />
+		<IR name="/se_layer0/se_rgb/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1555" output_port_id="onnx::Conv_1555" />
+		<IR name="onnx::Conv_1555" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/conv1_1/Conv" output_port_id="/conv1_1/Conv_output_0" />
+		<IR name="/conv1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/activation_1/Relu" output_port_id="/activation_1/Relu_output_0" />
+		<IR name="/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_depth/GlobalAveragePool" output_port_id="/se_layer0/se_depth/GlobalAveragePool_output_0" />
+		<IR name="/se_layer0/se_depth/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer0.se_depth.fc.0.weight" output_port_id="se_layer0.se_depth.fc.0.weight" />
+		<IR name="se_layer0.se_depth.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_depth/fc/fc.0/Conv" output_port_id="/se_layer0/se_depth/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer0/se_depth/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_depth/fc/activation/Relu" output_port_id="/se_layer0/se_depth/fc/activation/Relu_output_0" />
+		<IR name="/se_layer0/se_depth/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer0.se_depth.fc.2.weight" output_port_id="se_layer0.se_depth.fc.2.weight" />
+		<IR name="se_layer0.se_depth.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_depth/fc/fc.2/Conv" output_port_id="/se_layer0/se_depth/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer0/se_depth/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_depth/fc/fc.3/Sigmoid" output_port_id="/se_layer0/se_depth/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer0/se_depth/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer0/se_depth/Mul" output_port_id="/se_layer0/se_depth/Mul_output_0" />
+		<IR name="/se_layer0/se_depth/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer0/Add" output_port_id="/se_layer0/Add_output_0" />
+		<IR name="/se_layer0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/MaxPool" output_port_id="/MaxPool_output_0" />
+		<IR name="/MaxPool" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer1.0.conv3x1_1.weight" output_port_id="encoder_rgb.layer1.0.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer1.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv3x1_1/Conv" output_port_id="/layer1.0/conv3x1_1/Conv_output_0" />
+		<IR name="/layer1.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation/Relu" output_port_id="/layer1.0/activation/Relu_output_0" />
+		<IR name="/layer1.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1558" output_port_id="onnx::Conv_1558" />
+		<IR name="onnx::Conv_1558" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv1x3_1/Conv" output_port_id="/layer1.0/conv1x3_1/Conv_output_0" />
+		<IR name="/layer1.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_1/Relu" output_port_id="/layer1.0/activation_1/Relu_output_0" />
+		<IR name="/layer1.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer1.0.conv3x1_2.weight" output_port_id="encoder_rgb.layer1.0.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer1.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv3x1_2/Conv" output_port_id="/layer1.0/conv3x1_2/Conv_output_0" />
+		<IR name="/layer1.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_2/Relu" output_port_id="/layer1.0/activation_2/Relu_output_0" />
+		<IR name="/layer1.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1561" output_port_id="onnx::Conv_1561" />
+		<IR name="onnx::Conv_1561" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv1x3_2/Conv" output_port_id="/layer1.0/conv1x3_2/Conv_output_0" />
+		<IR name="/layer1.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/Add" output_port_id="/layer1.0/Add_output_0" />
+		<IR name="/layer1.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_3/Relu" output_port_id="/layer1.0/activation_3/Relu_output_0" />
+		<IR name="/layer1.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer1.1.conv3x1_1.weight" output_port_id="encoder_rgb.layer1.1.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer1.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv3x1_1/Conv" output_port_id="/layer1.1/conv3x1_1/Conv_output_0" />
+		<IR name="/layer1.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation/Relu" output_port_id="/layer1.1/activation/Relu_output_0" />
+		<IR name="/layer1.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1564" output_port_id="onnx::Conv_1564" />
+		<IR name="onnx::Conv_1564" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv1x3_1/Conv" output_port_id="/layer1.1/conv1x3_1/Conv_output_0" />
+		<IR name="/layer1.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_1/Relu" output_port_id="/layer1.1/activation_1/Relu_output_0" />
+		<IR name="/layer1.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer1.1.conv3x1_2.weight" output_port_id="encoder_rgb.layer1.1.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer1.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv3x1_2/Conv" output_port_id="/layer1.1/conv3x1_2/Conv_output_0" />
+		<IR name="/layer1.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_2/Relu" output_port_id="/layer1.1/activation_2/Relu_output_0" />
+		<IR name="/layer1.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1567" output_port_id="onnx::Conv_1567" />
+		<IR name="onnx::Conv_1567" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv1x3_2/Conv" output_port_id="/layer1.1/conv1x3_2/Conv_output_0" />
+		<IR name="/layer1.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/Add" output_port_id="/layer1.1/Add_output_0" />
+		<IR name="/layer1.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_3/Relu" output_port_id="/layer1.1/activation_3/Relu_output_0" />
+		<IR name="/layer1.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer1.2.conv3x1_1.weight" output_port_id="encoder_rgb.layer1.2.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer1.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv3x1_1/Conv" output_port_id="/layer1.2/conv3x1_1/Conv_output_0" />
+		<IR name="/layer1.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation/Relu" output_port_id="/layer1.2/activation/Relu_output_0" />
+		<IR name="/layer1.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1570" output_port_id="onnx::Conv_1570" />
+		<IR name="onnx::Conv_1570" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv1x3_1/Conv" output_port_id="/layer1.2/conv1x3_1/Conv_output_0" />
+		<IR name="/layer1.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_1/Relu" output_port_id="/layer1.2/activation_1/Relu_output_0" />
+		<IR name="/layer1.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer1.2.conv3x1_2.weight" output_port_id="encoder_rgb.layer1.2.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer1.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv3x1_2/Conv" output_port_id="/layer1.2/conv3x1_2/Conv_output_0" />
+		<IR name="/layer1.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_2/Relu" output_port_id="/layer1.2/activation_2/Relu_output_0" />
+		<IR name="/layer1.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1573" output_port_id="onnx::Conv_1573" />
+		<IR name="onnx::Conv_1573" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv1x3_2/Conv" output_port_id="/layer1.2/conv1x3_2/Conv_output_0" />
+		<IR name="/layer1.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/Add" output_port_id="/layer1.2/Add_output_0" />
+		<IR name="/layer1.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_3/Relu" output_port_id="/layer1.2/activation_3/Relu_output_0" />
+		<IR name="/layer1.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_rgb/GlobalAveragePool" output_port_id="/se_layer1/se_rgb/GlobalAveragePool_output_0" />
+		<IR name="/se_layer1/se_rgb/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer1.se_rgb.fc.0.weight" output_port_id="se_layer1.se_rgb.fc.0.weight" />
+		<IR name="se_layer1.se_rgb.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_rgb/fc/fc.0/Conv" output_port_id="/se_layer1/se_rgb/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer1/se_rgb/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_rgb/fc/activation/Relu" output_port_id="/se_layer1/se_rgb/fc/activation/Relu_output_0" />
+		<IR name="/se_layer1/se_rgb/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer1.se_rgb.fc.2.weight" output_port_id="se_layer1.se_rgb.fc.2.weight" />
+		<IR name="se_layer1.se_rgb.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_rgb/fc/fc.2/Conv" output_port_id="/se_layer1/se_rgb/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer1/se_rgb/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_rgb/fc/fc.3/Sigmoid" output_port_id="/se_layer1/se_rgb/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer1/se_rgb/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_rgb/Mul" output_port_id="/se_layer1/se_rgb/Mul_output_0" />
+		<IR name="/se_layer1/se_rgb/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/MaxPool_1" output_port_id="/MaxPool_1_output_0" />
+		<IR name="/MaxPool_1" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer1.0.conv3x1_1.weight" output_port_id="encoder_depth.layer1.0.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer1.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv3x1_1_1/Conv" output_port_id="/layer1.0/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer1.0/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_4/Relu" output_port_id="/layer1.0/activation_4/Relu_output_0" />
+		<IR name="/layer1.0/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1576" output_port_id="onnx::Conv_1576" />
+		<IR name="onnx::Conv_1576" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv1x3_1_1/Conv" output_port_id="/layer1.0/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer1.0/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_5/Relu" output_port_id="/layer1.0/activation_5/Relu_output_0" />
+		<IR name="/layer1.0/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer1.0.conv3x1_2.weight" output_port_id="encoder_depth.layer1.0.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer1.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv3x1_2_1/Conv" output_port_id="/layer1.0/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer1.0/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_6/Relu" output_port_id="/layer1.0/activation_6/Relu_output_0" />
+		<IR name="/layer1.0/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1579" output_port_id="onnx::Conv_1579" />
+		<IR name="onnx::Conv_1579" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.0/conv1x3_2_1/Conv" output_port_id="/layer1.0/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer1.0/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0_1/Add" output_port_id="/layer1.0_1/Add_output_0" />
+		<IR name="/layer1.0_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.0/activation_7/Relu" output_port_id="/layer1.0/activation_7/Relu_output_0" />
+		<IR name="/layer1.0/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer1.1.conv3x1_1.weight" output_port_id="encoder_depth.layer1.1.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer1.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv3x1_1_1/Conv" output_port_id="/layer1.1/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer1.1/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_4/Relu" output_port_id="/layer1.1/activation_4/Relu_output_0" />
+		<IR name="/layer1.1/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1582" output_port_id="onnx::Conv_1582" />
+		<IR name="onnx::Conv_1582" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv1x3_1_1/Conv" output_port_id="/layer1.1/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer1.1/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_5/Relu" output_port_id="/layer1.1/activation_5/Relu_output_0" />
+		<IR name="/layer1.1/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer1.1.conv3x1_2.weight" output_port_id="encoder_depth.layer1.1.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer1.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv3x1_2_1/Conv" output_port_id="/layer1.1/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer1.1/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_6/Relu" output_port_id="/layer1.1/activation_6/Relu_output_0" />
+		<IR name="/layer1.1/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1585" output_port_id="onnx::Conv_1585" />
+		<IR name="onnx::Conv_1585" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.1/conv1x3_2_1/Conv" output_port_id="/layer1.1/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer1.1/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1_1/Add" output_port_id="/layer1.1_1/Add_output_0" />
+		<IR name="/layer1.1_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.1/activation_7/Relu" output_port_id="/layer1.1/activation_7/Relu_output_0" />
+		<IR name="/layer1.1/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer1.2.conv3x1_1.weight" output_port_id="encoder_depth.layer1.2.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer1.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv3x1_1_1/Conv" output_port_id="/layer1.2/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer1.2/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_4/Relu" output_port_id="/layer1.2/activation_4/Relu_output_0" />
+		<IR name="/layer1.2/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1588" output_port_id="onnx::Conv_1588" />
+		<IR name="onnx::Conv_1588" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv1x3_1_1/Conv" output_port_id="/layer1.2/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer1.2/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_5/Relu" output_port_id="/layer1.2/activation_5/Relu_output_0" />
+		<IR name="/layer1.2/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer1.2.conv3x1_2.weight" output_port_id="encoder_depth.layer1.2.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer1.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv3x1_2_1/Conv" output_port_id="/layer1.2/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer1.2/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_6/Relu" output_port_id="/layer1.2/activation_6/Relu_output_0" />
+		<IR name="/layer1.2/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1591" output_port_id="onnx::Conv_1591" />
+		<IR name="onnx::Conv_1591" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer1.2/conv1x3_2_1/Conv" output_port_id="/layer1.2/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer1.2/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2_1/Add" output_port_id="/layer1.2_1/Add_output_0" />
+		<IR name="/layer1.2_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer1.2/activation_7/Relu" output_port_id="/layer1.2/activation_7/Relu_output_0" />
+		<IR name="/layer1.2/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_depth/GlobalAveragePool" output_port_id="/se_layer1/se_depth/GlobalAveragePool_output_0" />
+		<IR name="/se_layer1/se_depth/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer1.se_depth.fc.0.weight" output_port_id="se_layer1.se_depth.fc.0.weight" />
+		<IR name="se_layer1.se_depth.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_depth/fc/fc.0/Conv" output_port_id="/se_layer1/se_depth/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer1/se_depth/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_depth/fc/activation/Relu" output_port_id="/se_layer1/se_depth/fc/activation/Relu_output_0" />
+		<IR name="/se_layer1/se_depth/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer1.se_depth.fc.2.weight" output_port_id="se_layer1.se_depth.fc.2.weight" />
+		<IR name="se_layer1.se_depth.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_depth/fc/fc.2/Conv" output_port_id="/se_layer1/se_depth/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer1/se_depth/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_depth/fc/fc.3/Sigmoid" output_port_id="/se_layer1/se_depth/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer1/se_depth/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer1/se_depth/Mul" output_port_id="/se_layer1/se_depth/Mul_output_0" />
+		<IR name="/se_layer1/se_depth/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer1/Add" output_port_id="/se_layer1/Add_output_0" />
+		<IR name="/se_layer1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.0.conv3x1_1.weight" output_port_id="encoder_rgb.layer2.0.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer2.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv3x1_1/Conv" output_port_id="/layer2.0/conv3x1_1/Conv_output_0" />
+		<IR name="/layer2.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation/Relu" output_port_id="/layer2.0/activation/Relu_output_0" />
+		<IR name="/layer2.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1597" output_port_id="onnx::Conv_1597" />
+		<IR name="onnx::Conv_1597" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv1x3_1/Conv" output_port_id="/layer2.0/conv1x3_1/Conv_output_0" />
+		<IR name="/layer2.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_1/Relu" output_port_id="/layer2.0/activation_1/Relu_output_0" />
+		<IR name="/layer2.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.0.conv3x1_2.weight" output_port_id="encoder_rgb.layer2.0.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer2.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv3x1_2/Conv" output_port_id="/layer2.0/conv3x1_2/Conv_output_0" />
+		<IR name="/layer2.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_2/Relu" output_port_id="/layer2.0/activation_2/Relu_output_0" />
+		<IR name="/layer2.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1600" output_port_id="onnx::Conv_1600" />
+		<IR name="onnx::Conv_1600" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv1x3_2/Conv" output_port_id="/layer2.0/conv1x3_2/Conv_output_0" />
+		<IR name="/layer2.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1603" output_port_id="onnx::Conv_1603" />
+		<IR name="onnx::Conv_1603" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/downsample/downsample.0/Conv" output_port_id="/layer2.0/downsample/downsample.0/Conv_output_0" />
+		<IR name="/layer2.0/downsample/downsample.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/Add" output_port_id="/layer2.0/Add_output_0" />
+		<IR name="/layer2.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_3/Relu" output_port_id="/layer2.0/activation_3/Relu_output_0" />
+		<IR name="/layer2.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.1.conv3x1_1.weight" output_port_id="encoder_rgb.layer2.1.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer2.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv3x1_1/Conv" output_port_id="/layer2.1/conv3x1_1/Conv_output_0" />
+		<IR name="/layer2.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation/Relu" output_port_id="/layer2.1/activation/Relu_output_0" />
+		<IR name="/layer2.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1606" output_port_id="onnx::Conv_1606" />
+		<IR name="onnx::Conv_1606" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv1x3_1/Conv" output_port_id="/layer2.1/conv1x3_1/Conv_output_0" />
+		<IR name="/layer2.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_1/Relu" output_port_id="/layer2.1/activation_1/Relu_output_0" />
+		<IR name="/layer2.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.1.conv3x1_2.weight" output_port_id="encoder_rgb.layer2.1.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer2.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv3x1_2/Conv" output_port_id="/layer2.1/conv3x1_2/Conv_output_0" />
+		<IR name="/layer2.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_2/Relu" output_port_id="/layer2.1/activation_2/Relu_output_0" />
+		<IR name="/layer2.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1609" output_port_id="onnx::Conv_1609" />
+		<IR name="onnx::Conv_1609" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv1x3_2/Conv" output_port_id="/layer2.1/conv1x3_2/Conv_output_0" />
+		<IR name="/layer2.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/Add" output_port_id="/layer2.1/Add_output_0" />
+		<IR name="/layer2.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_3/Relu" output_port_id="/layer2.1/activation_3/Relu_output_0" />
+		<IR name="/layer2.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.2.conv3x1_1.weight" output_port_id="encoder_rgb.layer2.2.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer2.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv3x1_1/Conv" output_port_id="/layer2.2/conv3x1_1/Conv_output_0" />
+		<IR name="/layer2.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation/Relu" output_port_id="/layer2.2/activation/Relu_output_0" />
+		<IR name="/layer2.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1612" output_port_id="onnx::Conv_1612" />
+		<IR name="onnx::Conv_1612" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv1x3_1/Conv" output_port_id="/layer2.2/conv1x3_1/Conv_output_0" />
+		<IR name="/layer2.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_1/Relu" output_port_id="/layer2.2/activation_1/Relu_output_0" />
+		<IR name="/layer2.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.2.conv3x1_2.weight" output_port_id="encoder_rgb.layer2.2.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer2.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv3x1_2/Conv" output_port_id="/layer2.2/conv3x1_2/Conv_output_0" />
+		<IR name="/layer2.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_2/Relu" output_port_id="/layer2.2/activation_2/Relu_output_0" />
+		<IR name="/layer2.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1615" output_port_id="onnx::Conv_1615" />
+		<IR name="onnx::Conv_1615" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv1x3_2/Conv" output_port_id="/layer2.2/conv1x3_2/Conv_output_0" />
+		<IR name="/layer2.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/Add" output_port_id="/layer2.2/Add_output_0" />
+		<IR name="/layer2.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_3/Relu" output_port_id="/layer2.2/activation_3/Relu_output_0" />
+		<IR name="/layer2.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.3.conv3x1_1.weight" output_port_id="encoder_rgb.layer2.3.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer2.3.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv3x1_1/Conv" output_port_id="/layer2.3/conv3x1_1/Conv_output_0" />
+		<IR name="/layer2.3/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation/Relu" output_port_id="/layer2.3/activation/Relu_output_0" />
+		<IR name="/layer2.3/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1618" output_port_id="onnx::Conv_1618" />
+		<IR name="onnx::Conv_1618" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv1x3_1/Conv" output_port_id="/layer2.3/conv1x3_1/Conv_output_0" />
+		<IR name="/layer2.3/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_1/Relu" output_port_id="/layer2.3/activation_1/Relu_output_0" />
+		<IR name="/layer2.3/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer2.3.conv3x1_2.weight" output_port_id="encoder_rgb.layer2.3.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer2.3.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv3x1_2/Conv" output_port_id="/layer2.3/conv3x1_2/Conv_output_0" />
+		<IR name="/layer2.3/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_2/Relu" output_port_id="/layer2.3/activation_2/Relu_output_0" />
+		<IR name="/layer2.3/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1621" output_port_id="onnx::Conv_1621" />
+		<IR name="onnx::Conv_1621" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv1x3_2/Conv" output_port_id="/layer2.3/conv1x3_2/Conv_output_0" />
+		<IR name="/layer2.3/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/Add" output_port_id="/layer2.3/Add_output_0" />
+		<IR name="/layer2.3/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_3/Relu" output_port_id="/layer2.3/activation_3/Relu_output_0" />
+		<IR name="/layer2.3/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_rgb/GlobalAveragePool" output_port_id="/se_layer2/se_rgb/GlobalAveragePool_output_0" />
+		<IR name="/se_layer2/se_rgb/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer2.se_rgb.fc.0.weight" output_port_id="se_layer2.se_rgb.fc.0.weight" />
+		<IR name="se_layer2.se_rgb.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_rgb/fc/fc.0/Conv" output_port_id="/se_layer2/se_rgb/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer2/se_rgb/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_rgb/fc/activation/Relu" output_port_id="/se_layer2/se_rgb/fc/activation/Relu_output_0" />
+		<IR name="/se_layer2/se_rgb/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer2.se_rgb.fc.2.weight" output_port_id="se_layer2.se_rgb.fc.2.weight" />
+		<IR name="se_layer2.se_rgb.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_rgb/fc/fc.2/Conv" output_port_id="/se_layer2/se_rgb/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer2/se_rgb/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_rgb/fc/fc.3/Sigmoid" output_port_id="/se_layer2/se_rgb/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer2/se_rgb/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_rgb/Mul" output_port_id="/se_layer2/se_rgb/Mul_output_0" />
+		<IR name="/se_layer2/se_rgb/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.0.conv3x1_1.weight" output_port_id="encoder_depth.layer2.0.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer2.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv3x1_1_1/Conv" output_port_id="/layer2.0/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer2.0/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_4/Relu" output_port_id="/layer2.0/activation_4/Relu_output_0" />
+		<IR name="/layer2.0/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1624" output_port_id="onnx::Conv_1624" />
+		<IR name="onnx::Conv_1624" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv1x3_1_1/Conv" output_port_id="/layer2.0/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer2.0/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_5/Relu" output_port_id="/layer2.0/activation_5/Relu_output_0" />
+		<IR name="/layer2.0/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.0.conv3x1_2.weight" output_port_id="encoder_depth.layer2.0.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer2.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv3x1_2_1/Conv" output_port_id="/layer2.0/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer2.0/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_6/Relu" output_port_id="/layer2.0/activation_6/Relu_output_0" />
+		<IR name="/layer2.0/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1627" output_port_id="onnx::Conv_1627" />
+		<IR name="onnx::Conv_1627" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/conv1x3_2_1/Conv" output_port_id="/layer2.0/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer2.0/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1630" output_port_id="onnx::Conv_1630" />
+		<IR name="onnx::Conv_1630" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.0/downsample/downsample.0_1/Conv" output_port_id="/layer2.0/downsample/downsample.0_1/Conv_output_0" />
+		<IR name="/layer2.0/downsample/downsample.0_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0_1/Add" output_port_id="/layer2.0_1/Add_output_0" />
+		<IR name="/layer2.0_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.0/activation_7/Relu" output_port_id="/layer2.0/activation_7/Relu_output_0" />
+		<IR name="/layer2.0/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.1.conv3x1_1.weight" output_port_id="encoder_depth.layer2.1.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer2.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv3x1_1_1/Conv" output_port_id="/layer2.1/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer2.1/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_4/Relu" output_port_id="/layer2.1/activation_4/Relu_output_0" />
+		<IR name="/layer2.1/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1633" output_port_id="onnx::Conv_1633" />
+		<IR name="onnx::Conv_1633" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv1x3_1_1/Conv" output_port_id="/layer2.1/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer2.1/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_5/Relu" output_port_id="/layer2.1/activation_5/Relu_output_0" />
+		<IR name="/layer2.1/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.1.conv3x1_2.weight" output_port_id="encoder_depth.layer2.1.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer2.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv3x1_2_1/Conv" output_port_id="/layer2.1/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer2.1/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_6/Relu" output_port_id="/layer2.1/activation_6/Relu_output_0" />
+		<IR name="/layer2.1/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1636" output_port_id="onnx::Conv_1636" />
+		<IR name="onnx::Conv_1636" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.1/conv1x3_2_1/Conv" output_port_id="/layer2.1/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer2.1/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1_1/Add" output_port_id="/layer2.1_1/Add_output_0" />
+		<IR name="/layer2.1_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.1/activation_7/Relu" output_port_id="/layer2.1/activation_7/Relu_output_0" />
+		<IR name="/layer2.1/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.2.conv3x1_1.weight" output_port_id="encoder_depth.layer2.2.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer2.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv3x1_1_1/Conv" output_port_id="/layer2.2/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer2.2/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_4/Relu" output_port_id="/layer2.2/activation_4/Relu_output_0" />
+		<IR name="/layer2.2/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1639" output_port_id="onnx::Conv_1639" />
+		<IR name="onnx::Conv_1639" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv1x3_1_1/Conv" output_port_id="/layer2.2/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer2.2/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_5/Relu" output_port_id="/layer2.2/activation_5/Relu_output_0" />
+		<IR name="/layer2.2/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.2.conv3x1_2.weight" output_port_id="encoder_depth.layer2.2.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer2.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv3x1_2_1/Conv" output_port_id="/layer2.2/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer2.2/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_6/Relu" output_port_id="/layer2.2/activation_6/Relu_output_0" />
+		<IR name="/layer2.2/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1642" output_port_id="onnx::Conv_1642" />
+		<IR name="onnx::Conv_1642" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.2/conv1x3_2_1/Conv" output_port_id="/layer2.2/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer2.2/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2_1/Add" output_port_id="/layer2.2_1/Add_output_0" />
+		<IR name="/layer2.2_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.2/activation_7/Relu" output_port_id="/layer2.2/activation_7/Relu_output_0" />
+		<IR name="/layer2.2/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.3.conv3x1_1.weight" output_port_id="encoder_depth.layer2.3.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer2.3.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv3x1_1_1/Conv" output_port_id="/layer2.3/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer2.3/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_4/Relu" output_port_id="/layer2.3/activation_4/Relu_output_0" />
+		<IR name="/layer2.3/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1645" output_port_id="onnx::Conv_1645" />
+		<IR name="onnx::Conv_1645" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv1x3_1_1/Conv" output_port_id="/layer2.3/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer2.3/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_5/Relu" output_port_id="/layer2.3/activation_5/Relu_output_0" />
+		<IR name="/layer2.3/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer2.3.conv3x1_2.weight" output_port_id="encoder_depth.layer2.3.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer2.3.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv3x1_2_1/Conv" output_port_id="/layer2.3/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer2.3/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_6/Relu" output_port_id="/layer2.3/activation_6/Relu_output_0" />
+		<IR name="/layer2.3/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1648" output_port_id="onnx::Conv_1648" />
+		<IR name="onnx::Conv_1648" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer2.3/conv1x3_2_1/Conv" output_port_id="/layer2.3/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer2.3/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3_1/Add" output_port_id="/layer2.3_1/Add_output_0" />
+		<IR name="/layer2.3_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer2.3/activation_7/Relu" output_port_id="/layer2.3/activation_7/Relu_output_0" />
+		<IR name="/layer2.3/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_depth/GlobalAveragePool" output_port_id="/se_layer2/se_depth/GlobalAveragePool_output_0" />
+		<IR name="/se_layer2/se_depth/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer2.se_depth.fc.0.weight" output_port_id="se_layer2.se_depth.fc.0.weight" />
+		<IR name="se_layer2.se_depth.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_depth/fc/fc.0/Conv" output_port_id="/se_layer2/se_depth/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer2/se_depth/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_depth/fc/activation/Relu" output_port_id="/se_layer2/se_depth/fc/activation/Relu_output_0" />
+		<IR name="/se_layer2/se_depth/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer2.se_depth.fc.2.weight" output_port_id="se_layer2.se_depth.fc.2.weight" />
+		<IR name="se_layer2.se_depth.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_depth/fc/fc.2/Conv" output_port_id="/se_layer2/se_depth/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer2/se_depth/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_depth/fc/fc.3/Sigmoid" output_port_id="/se_layer2/se_depth/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer2/se_depth/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer2/se_depth/Mul" output_port_id="/se_layer2/se_depth/Mul_output_0" />
+		<IR name="/se_layer2/se_depth/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer2/Add" output_port_id="/se_layer2/Add_output_0" />
+		<IR name="/se_layer2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.0.conv3x1_1.weight" output_port_id="encoder_rgb.layer3.0.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer3.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv3x1_1/Conv" output_port_id="/layer3.0/conv3x1_1/Conv_output_0" />
+		<IR name="/layer3.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation/Relu" output_port_id="/layer3.0/activation/Relu_output_0" />
+		<IR name="/layer3.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1654" output_port_id="onnx::Conv_1654" />
+		<IR name="onnx::Conv_1654" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv1x3_1/Conv" output_port_id="/layer3.0/conv1x3_1/Conv_output_0" />
+		<IR name="/layer3.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_1/Relu" output_port_id="/layer3.0/activation_1/Relu_output_0" />
+		<IR name="/layer3.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.0.conv3x1_2.weight" output_port_id="encoder_rgb.layer3.0.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer3.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv3x1_2/Conv" output_port_id="/layer3.0/conv3x1_2/Conv_output_0" />
+		<IR name="/layer3.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_2/Relu" output_port_id="/layer3.0/activation_2/Relu_output_0" />
+		<IR name="/layer3.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1657" output_port_id="onnx::Conv_1657" />
+		<IR name="onnx::Conv_1657" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv1x3_2/Conv" output_port_id="/layer3.0/conv1x3_2/Conv_output_0" />
+		<IR name="/layer3.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1660" output_port_id="onnx::Conv_1660" />
+		<IR name="onnx::Conv_1660" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/downsample/downsample.0/Conv" output_port_id="/layer3.0/downsample/downsample.0/Conv_output_0" />
+		<IR name="/layer3.0/downsample/downsample.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/Add" output_port_id="/layer3.0/Add_output_0" />
+		<IR name="/layer3.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_3/Relu" output_port_id="/layer3.0/activation_3/Relu_output_0" />
+		<IR name="/layer3.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.1.conv3x1_1.weight" output_port_id="encoder_rgb.layer3.1.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer3.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv3x1_1/Conv" output_port_id="/layer3.1/conv3x1_1/Conv_output_0" />
+		<IR name="/layer3.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation/Relu" output_port_id="/layer3.1/activation/Relu_output_0" />
+		<IR name="/layer3.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1663" output_port_id="onnx::Conv_1663" />
+		<IR name="onnx::Conv_1663" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv1x3_1/Conv" output_port_id="/layer3.1/conv1x3_1/Conv_output_0" />
+		<IR name="/layer3.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_1/Relu" output_port_id="/layer3.1/activation_1/Relu_output_0" />
+		<IR name="/layer3.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.1.conv3x1_2.weight" output_port_id="encoder_rgb.layer3.1.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer3.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv3x1_2/Conv" output_port_id="/layer3.1/conv3x1_2/Conv_output_0" />
+		<IR name="/layer3.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_2/Relu" output_port_id="/layer3.1/activation_2/Relu_output_0" />
+		<IR name="/layer3.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1666" output_port_id="onnx::Conv_1666" />
+		<IR name="onnx::Conv_1666" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv1x3_2/Conv" output_port_id="/layer3.1/conv1x3_2/Conv_output_0" />
+		<IR name="/layer3.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/Add" output_port_id="/layer3.1/Add_output_0" />
+		<IR name="/layer3.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_3/Relu" output_port_id="/layer3.1/activation_3/Relu_output_0" />
+		<IR name="/layer3.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.2.conv3x1_1.weight" output_port_id="encoder_rgb.layer3.2.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer3.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv3x1_1/Conv" output_port_id="/layer3.2/conv3x1_1/Conv_output_0" />
+		<IR name="/layer3.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation/Relu" output_port_id="/layer3.2/activation/Relu_output_0" />
+		<IR name="/layer3.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1669" output_port_id="onnx::Conv_1669" />
+		<IR name="onnx::Conv_1669" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv1x3_1/Conv" output_port_id="/layer3.2/conv1x3_1/Conv_output_0" />
+		<IR name="/layer3.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_1/Relu" output_port_id="/layer3.2/activation_1/Relu_output_0" />
+		<IR name="/layer3.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.2.conv3x1_2.weight" output_port_id="encoder_rgb.layer3.2.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer3.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv3x1_2/Conv" output_port_id="/layer3.2/conv3x1_2/Conv_output_0" />
+		<IR name="/layer3.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_2/Relu" output_port_id="/layer3.2/activation_2/Relu_output_0" />
+		<IR name="/layer3.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1672" output_port_id="onnx::Conv_1672" />
+		<IR name="onnx::Conv_1672" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv1x3_2/Conv" output_port_id="/layer3.2/conv1x3_2/Conv_output_0" />
+		<IR name="/layer3.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/Add" output_port_id="/layer3.2/Add_output_0" />
+		<IR name="/layer3.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_3/Relu" output_port_id="/layer3.2/activation_3/Relu_output_0" />
+		<IR name="/layer3.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.3.conv3x1_1.weight" output_port_id="encoder_rgb.layer3.3.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer3.3.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv3x1_1/Conv" output_port_id="/layer3.3/conv3x1_1/Conv_output_0" />
+		<IR name="/layer3.3/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation/Relu" output_port_id="/layer3.3/activation/Relu_output_0" />
+		<IR name="/layer3.3/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1675" output_port_id="onnx::Conv_1675" />
+		<IR name="onnx::Conv_1675" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv1x3_1/Conv" output_port_id="/layer3.3/conv1x3_1/Conv_output_0" />
+		<IR name="/layer3.3/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_1/Relu" output_port_id="/layer3.3/activation_1/Relu_output_0" />
+		<IR name="/layer3.3/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.3.conv3x1_2.weight" output_port_id="encoder_rgb.layer3.3.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer3.3.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv3x1_2/Conv" output_port_id="/layer3.3/conv3x1_2/Conv_output_0" />
+		<IR name="/layer3.3/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_2/Relu" output_port_id="/layer3.3/activation_2/Relu_output_0" />
+		<IR name="/layer3.3/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1678" output_port_id="onnx::Conv_1678" />
+		<IR name="onnx::Conv_1678" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv1x3_2/Conv" output_port_id="/layer3.3/conv1x3_2/Conv_output_0" />
+		<IR name="/layer3.3/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/Add" output_port_id="/layer3.3/Add_output_0" />
+		<IR name="/layer3.3/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_3/Relu" output_port_id="/layer3.3/activation_3/Relu_output_0" />
+		<IR name="/layer3.3/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.4.conv3x1_1.weight" output_port_id="encoder_rgb.layer3.4.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer3.4.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv3x1_1/Conv" output_port_id="/layer3.4/conv3x1_1/Conv_output_0" />
+		<IR name="/layer3.4/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation/Relu" output_port_id="/layer3.4/activation/Relu_output_0" />
+		<IR name="/layer3.4/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1681" output_port_id="onnx::Conv_1681" />
+		<IR name="onnx::Conv_1681" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv1x3_1/Conv" output_port_id="/layer3.4/conv1x3_1/Conv_output_0" />
+		<IR name="/layer3.4/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_1/Relu" output_port_id="/layer3.4/activation_1/Relu_output_0" />
+		<IR name="/layer3.4/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.4.conv3x1_2.weight" output_port_id="encoder_rgb.layer3.4.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer3.4.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv3x1_2/Conv" output_port_id="/layer3.4/conv3x1_2/Conv_output_0" />
+		<IR name="/layer3.4/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_2/Relu" output_port_id="/layer3.4/activation_2/Relu_output_0" />
+		<IR name="/layer3.4/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1684" output_port_id="onnx::Conv_1684" />
+		<IR name="onnx::Conv_1684" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv1x3_2/Conv" output_port_id="/layer3.4/conv1x3_2/Conv_output_0" />
+		<IR name="/layer3.4/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/Add" output_port_id="/layer3.4/Add_output_0" />
+		<IR name="/layer3.4/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_3/Relu" output_port_id="/layer3.4/activation_3/Relu_output_0" />
+		<IR name="/layer3.4/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.5.conv3x1_1.weight" output_port_id="encoder_rgb.layer3.5.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer3.5.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv3x1_1/Conv" output_port_id="/layer3.5/conv3x1_1/Conv_output_0" />
+		<IR name="/layer3.5/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation/Relu" output_port_id="/layer3.5/activation/Relu_output_0" />
+		<IR name="/layer3.5/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1687" output_port_id="onnx::Conv_1687" />
+		<IR name="onnx::Conv_1687" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv1x3_1/Conv" output_port_id="/layer3.5/conv1x3_1/Conv_output_0" />
+		<IR name="/layer3.5/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_1/Relu" output_port_id="/layer3.5/activation_1/Relu_output_0" />
+		<IR name="/layer3.5/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer3.5.conv3x1_2.weight" output_port_id="encoder_rgb.layer3.5.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer3.5.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv3x1_2/Conv" output_port_id="/layer3.5/conv3x1_2/Conv_output_0" />
+		<IR name="/layer3.5/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_2/Relu" output_port_id="/layer3.5/activation_2/Relu_output_0" />
+		<IR name="/layer3.5/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1690" output_port_id="onnx::Conv_1690" />
+		<IR name="onnx::Conv_1690" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv1x3_2/Conv" output_port_id="/layer3.5/conv1x3_2/Conv_output_0" />
+		<IR name="/layer3.5/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/Add" output_port_id="/layer3.5/Add_output_0" />
+		<IR name="/layer3.5/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_3/Relu" output_port_id="/layer3.5/activation_3/Relu_output_0" />
+		<IR name="/layer3.5/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_rgb/GlobalAveragePool" output_port_id="/se_layer3/se_rgb/GlobalAveragePool_output_0" />
+		<IR name="/se_layer3/se_rgb/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer3.se_rgb.fc.0.weight" output_port_id="se_layer3.se_rgb.fc.0.weight" />
+		<IR name="se_layer3.se_rgb.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_rgb/fc/fc.0/Conv" output_port_id="/se_layer3/se_rgb/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer3/se_rgb/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_rgb/fc/activation/Relu" output_port_id="/se_layer3/se_rgb/fc/activation/Relu_output_0" />
+		<IR name="/se_layer3/se_rgb/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer3.se_rgb.fc.2.weight" output_port_id="se_layer3.se_rgb.fc.2.weight" />
+		<IR name="se_layer3.se_rgb.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_rgb/fc/fc.2/Conv" output_port_id="/se_layer3/se_rgb/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer3/se_rgb/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_rgb/fc/fc.3/Sigmoid" output_port_id="/se_layer3/se_rgb/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer3/se_rgb/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_rgb/Mul" output_port_id="/se_layer3/se_rgb/Mul_output_0" />
+		<IR name="/se_layer3/se_rgb/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.0.conv3x1_1.weight" output_port_id="encoder_depth.layer3.0.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer3.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv3x1_1_1/Conv" output_port_id="/layer3.0/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer3.0/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_4/Relu" output_port_id="/layer3.0/activation_4/Relu_output_0" />
+		<IR name="/layer3.0/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1693" output_port_id="onnx::Conv_1693" />
+		<IR name="onnx::Conv_1693" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv1x3_1_1/Conv" output_port_id="/layer3.0/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer3.0/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_5/Relu" output_port_id="/layer3.0/activation_5/Relu_output_0" />
+		<IR name="/layer3.0/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.0.conv3x1_2.weight" output_port_id="encoder_depth.layer3.0.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer3.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv3x1_2_1/Conv" output_port_id="/layer3.0/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer3.0/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_6/Relu" output_port_id="/layer3.0/activation_6/Relu_output_0" />
+		<IR name="/layer3.0/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1696" output_port_id="onnx::Conv_1696" />
+		<IR name="onnx::Conv_1696" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/conv1x3_2_1/Conv" output_port_id="/layer3.0/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer3.0/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1699" output_port_id="onnx::Conv_1699" />
+		<IR name="onnx::Conv_1699" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.0/downsample/downsample.0_1/Conv" output_port_id="/layer3.0/downsample/downsample.0_1/Conv_output_0" />
+		<IR name="/layer3.0/downsample/downsample.0_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0_1/Add" output_port_id="/layer3.0_1/Add_output_0" />
+		<IR name="/layer3.0_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.0/activation_7/Relu" output_port_id="/layer3.0/activation_7/Relu_output_0" />
+		<IR name="/layer3.0/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.1.conv3x1_1.weight" output_port_id="encoder_depth.layer3.1.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer3.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv3x1_1_1/Conv" output_port_id="/layer3.1/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer3.1/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_4/Relu" output_port_id="/layer3.1/activation_4/Relu_output_0" />
+		<IR name="/layer3.1/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1702" output_port_id="onnx::Conv_1702" />
+		<IR name="onnx::Conv_1702" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv1x3_1_1/Conv" output_port_id="/layer3.1/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer3.1/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_5/Relu" output_port_id="/layer3.1/activation_5/Relu_output_0" />
+		<IR name="/layer3.1/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.1.conv3x1_2.weight" output_port_id="encoder_depth.layer3.1.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer3.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv3x1_2_1/Conv" output_port_id="/layer3.1/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer3.1/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_6/Relu" output_port_id="/layer3.1/activation_6/Relu_output_0" />
+		<IR name="/layer3.1/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1705" output_port_id="onnx::Conv_1705" />
+		<IR name="onnx::Conv_1705" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.1/conv1x3_2_1/Conv" output_port_id="/layer3.1/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer3.1/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1_1/Add" output_port_id="/layer3.1_1/Add_output_0" />
+		<IR name="/layer3.1_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.1/activation_7/Relu" output_port_id="/layer3.1/activation_7/Relu_output_0" />
+		<IR name="/layer3.1/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.2.conv3x1_1.weight" output_port_id="encoder_depth.layer3.2.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer3.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv3x1_1_1/Conv" output_port_id="/layer3.2/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer3.2/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_4/Relu" output_port_id="/layer3.2/activation_4/Relu_output_0" />
+		<IR name="/layer3.2/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1708" output_port_id="onnx::Conv_1708" />
+		<IR name="onnx::Conv_1708" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv1x3_1_1/Conv" output_port_id="/layer3.2/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer3.2/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_5/Relu" output_port_id="/layer3.2/activation_5/Relu_output_0" />
+		<IR name="/layer3.2/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.2.conv3x1_2.weight" output_port_id="encoder_depth.layer3.2.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer3.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv3x1_2_1/Conv" output_port_id="/layer3.2/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer3.2/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_6/Relu" output_port_id="/layer3.2/activation_6/Relu_output_0" />
+		<IR name="/layer3.2/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1711" output_port_id="onnx::Conv_1711" />
+		<IR name="onnx::Conv_1711" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.2/conv1x3_2_1/Conv" output_port_id="/layer3.2/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer3.2/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2_1/Add" output_port_id="/layer3.2_1/Add_output_0" />
+		<IR name="/layer3.2_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.2/activation_7/Relu" output_port_id="/layer3.2/activation_7/Relu_output_0" />
+		<IR name="/layer3.2/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.3.conv3x1_1.weight" output_port_id="encoder_depth.layer3.3.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer3.3.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv3x1_1_1/Conv" output_port_id="/layer3.3/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer3.3/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_4/Relu" output_port_id="/layer3.3/activation_4/Relu_output_0" />
+		<IR name="/layer3.3/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1714" output_port_id="onnx::Conv_1714" />
+		<IR name="onnx::Conv_1714" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv1x3_1_1/Conv" output_port_id="/layer3.3/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer3.3/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_5/Relu" output_port_id="/layer3.3/activation_5/Relu_output_0" />
+		<IR name="/layer3.3/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.3.conv3x1_2.weight" output_port_id="encoder_depth.layer3.3.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer3.3.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv3x1_2_1/Conv" output_port_id="/layer3.3/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer3.3/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_6/Relu" output_port_id="/layer3.3/activation_6/Relu_output_0" />
+		<IR name="/layer3.3/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1717" output_port_id="onnx::Conv_1717" />
+		<IR name="onnx::Conv_1717" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.3/conv1x3_2_1/Conv" output_port_id="/layer3.3/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer3.3/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3_1/Add" output_port_id="/layer3.3_1/Add_output_0" />
+		<IR name="/layer3.3_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.3/activation_7/Relu" output_port_id="/layer3.3/activation_7/Relu_output_0" />
+		<IR name="/layer3.3/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.4.conv3x1_1.weight" output_port_id="encoder_depth.layer3.4.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer3.4.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv3x1_1_1/Conv" output_port_id="/layer3.4/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer3.4/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_4/Relu" output_port_id="/layer3.4/activation_4/Relu_output_0" />
+		<IR name="/layer3.4/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1720" output_port_id="onnx::Conv_1720" />
+		<IR name="onnx::Conv_1720" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv1x3_1_1/Conv" output_port_id="/layer3.4/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer3.4/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_5/Relu" output_port_id="/layer3.4/activation_5/Relu_output_0" />
+		<IR name="/layer3.4/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.4.conv3x1_2.weight" output_port_id="encoder_depth.layer3.4.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer3.4.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv3x1_2_1/Conv" output_port_id="/layer3.4/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer3.4/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_6/Relu" output_port_id="/layer3.4/activation_6/Relu_output_0" />
+		<IR name="/layer3.4/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1723" output_port_id="onnx::Conv_1723" />
+		<IR name="onnx::Conv_1723" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.4/conv1x3_2_1/Conv" output_port_id="/layer3.4/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer3.4/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4_1/Add" output_port_id="/layer3.4_1/Add_output_0" />
+		<IR name="/layer3.4_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.4/activation_7/Relu" output_port_id="/layer3.4/activation_7/Relu_output_0" />
+		<IR name="/layer3.4/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.5.conv3x1_1.weight" output_port_id="encoder_depth.layer3.5.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer3.5.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv3x1_1_1/Conv" output_port_id="/layer3.5/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer3.5/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_4/Relu" output_port_id="/layer3.5/activation_4/Relu_output_0" />
+		<IR name="/layer3.5/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1726" output_port_id="onnx::Conv_1726" />
+		<IR name="onnx::Conv_1726" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv1x3_1_1/Conv" output_port_id="/layer3.5/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer3.5/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_5/Relu" output_port_id="/layer3.5/activation_5/Relu_output_0" />
+		<IR name="/layer3.5/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer3.5.conv3x1_2.weight" output_port_id="encoder_depth.layer3.5.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer3.5.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv3x1_2_1/Conv" output_port_id="/layer3.5/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer3.5/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_6/Relu" output_port_id="/layer3.5/activation_6/Relu_output_0" />
+		<IR name="/layer3.5/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1729" output_port_id="onnx::Conv_1729" />
+		<IR name="onnx::Conv_1729" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer3.5/conv1x3_2_1/Conv" output_port_id="/layer3.5/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer3.5/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5_1/Add" output_port_id="/layer3.5_1/Add_output_0" />
+		<IR name="/layer3.5_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer3.5/activation_7/Relu" output_port_id="/layer3.5/activation_7/Relu_output_0" />
+		<IR name="/layer3.5/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_depth/GlobalAveragePool" output_port_id="/se_layer3/se_depth/GlobalAveragePool_output_0" />
+		<IR name="/se_layer3/se_depth/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer3.se_depth.fc.0.weight" output_port_id="se_layer3.se_depth.fc.0.weight" />
+		<IR name="se_layer3.se_depth.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_depth/fc/fc.0/Conv" output_port_id="/se_layer3/se_depth/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer3/se_depth/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_depth/fc/activation/Relu" output_port_id="/se_layer3/se_depth/fc/activation/Relu_output_0" />
+		<IR name="/se_layer3/se_depth/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer3.se_depth.fc.2.weight" output_port_id="se_layer3.se_depth.fc.2.weight" />
+		<IR name="se_layer3.se_depth.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_depth/fc/fc.2/Conv" output_port_id="/se_layer3/se_depth/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer3/se_depth/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_depth/fc/fc.3/Sigmoid" output_port_id="/se_layer3/se_depth/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer3/se_depth/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer3/se_depth/Mul" output_port_id="/se_layer3/se_depth/Mul_output_0" />
+		<IR name="/se_layer3/se_depth/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer3/Add" output_port_id="/se_layer3/Add_output_0" />
+		<IR name="/se_layer3/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer4.0.conv3x1_1.weight" output_port_id="encoder_rgb.layer4.0.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer4.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv3x1_1/Conv" output_port_id="/layer4.0/conv3x1_1/Conv_output_0" />
+		<IR name="/layer4.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation/Relu" output_port_id="/layer4.0/activation/Relu_output_0" />
+		<IR name="/layer4.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1735" output_port_id="onnx::Conv_1735" />
+		<IR name="onnx::Conv_1735" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv1x3_1/Conv" output_port_id="/layer4.0/conv1x3_1/Conv_output_0" />
+		<IR name="/layer4.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_1/Relu" output_port_id="/layer4.0/activation_1/Relu_output_0" />
+		<IR name="/layer4.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer4.0.conv3x1_2.weight" output_port_id="encoder_rgb.layer4.0.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer4.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv3x1_2/Conv" output_port_id="/layer4.0/conv3x1_2/Conv_output_0" />
+		<IR name="/layer4.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_2/Relu" output_port_id="/layer4.0/activation_2/Relu_output_0" />
+		<IR name="/layer4.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1738" output_port_id="onnx::Conv_1738" />
+		<IR name="onnx::Conv_1738" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv1x3_2/Conv" output_port_id="/layer4.0/conv1x3_2/Conv_output_0" />
+		<IR name="/layer4.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1741" output_port_id="onnx::Conv_1741" />
+		<IR name="onnx::Conv_1741" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/downsample/downsample.0/Conv" output_port_id="/layer4.0/downsample/downsample.0/Conv_output_0" />
+		<IR name="/layer4.0/downsample/downsample.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/Add" output_port_id="/layer4.0/Add_output_0" />
+		<IR name="/layer4.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_3/Relu" output_port_id="/layer4.0/activation_3/Relu_output_0" />
+		<IR name="/layer4.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer4.1.conv3x1_1.weight" output_port_id="encoder_rgb.layer4.1.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer4.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv3x1_1/Conv" output_port_id="/layer4.1/conv3x1_1/Conv_output_0" />
+		<IR name="/layer4.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation/Relu" output_port_id="/layer4.1/activation/Relu_output_0" />
+		<IR name="/layer4.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1744" output_port_id="onnx::Conv_1744" />
+		<IR name="onnx::Conv_1744" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv1x3_1/Conv" output_port_id="/layer4.1/conv1x3_1/Conv_output_0" />
+		<IR name="/layer4.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_1/Relu" output_port_id="/layer4.1/activation_1/Relu_output_0" />
+		<IR name="/layer4.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer4.1.conv3x1_2.weight" output_port_id="encoder_rgb.layer4.1.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer4.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv3x1_2/Conv" output_port_id="/layer4.1/conv3x1_2/Conv_output_0" />
+		<IR name="/layer4.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_2/Relu" output_port_id="/layer4.1/activation_2/Relu_output_0" />
+		<IR name="/layer4.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1747" output_port_id="onnx::Conv_1747" />
+		<IR name="onnx::Conv_1747" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv1x3_2/Conv" output_port_id="/layer4.1/conv1x3_2/Conv_output_0" />
+		<IR name="/layer4.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/Add" output_port_id="/layer4.1/Add_output_0" />
+		<IR name="/layer4.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_3/Relu" output_port_id="/layer4.1/activation_3/Relu_output_0" />
+		<IR name="/layer4.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer4.2.conv3x1_1.weight" output_port_id="encoder_rgb.layer4.2.conv3x1_1.weight" />
+		<IR name="encoder_rgb.layer4.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv3x1_1/Conv" output_port_id="/layer4.2/conv3x1_1/Conv_output_0" />
+		<IR name="/layer4.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation/Relu" output_port_id="/layer4.2/activation/Relu_output_0" />
+		<IR name="/layer4.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1750" output_port_id="onnx::Conv_1750" />
+		<IR name="onnx::Conv_1750" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv1x3_1/Conv" output_port_id="/layer4.2/conv1x3_1/Conv_output_0" />
+		<IR name="/layer4.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_1/Relu" output_port_id="/layer4.2/activation_1/Relu_output_0" />
+		<IR name="/layer4.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_rgb.layer4.2.conv3x1_2.weight" output_port_id="encoder_rgb.layer4.2.conv3x1_2.weight" />
+		<IR name="encoder_rgb.layer4.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv3x1_2/Conv" output_port_id="/layer4.2/conv3x1_2/Conv_output_0" />
+		<IR name="/layer4.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_2/Relu" output_port_id="/layer4.2/activation_2/Relu_output_0" />
+		<IR name="/layer4.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1753" output_port_id="onnx::Conv_1753" />
+		<IR name="onnx::Conv_1753" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv1x3_2/Conv" output_port_id="/layer4.2/conv1x3_2/Conv_output_0" />
+		<IR name="/layer4.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/Add" output_port_id="/layer4.2/Add_output_0" />
+		<IR name="/layer4.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_3/Relu" output_port_id="/layer4.2/activation_3/Relu_output_0" />
+		<IR name="/layer4.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_rgb/GlobalAveragePool" output_port_id="/se_layer4/se_rgb/GlobalAveragePool_output_0" />
+		<IR name="/se_layer4/se_rgb/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer4.se_rgb.fc.0.weight" output_port_id="se_layer4.se_rgb.fc.0.weight" />
+		<IR name="se_layer4.se_rgb.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_rgb/fc/fc.0/Conv" output_port_id="/se_layer4/se_rgb/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer4/se_rgb/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_rgb/fc/activation/Relu" output_port_id="/se_layer4/se_rgb/fc/activation/Relu_output_0" />
+		<IR name="/se_layer4/se_rgb/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer4.se_rgb.fc.2.weight" output_port_id="se_layer4.se_rgb.fc.2.weight" />
+		<IR name="se_layer4.se_rgb.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_rgb/fc/fc.2/Conv" output_port_id="/se_layer4/se_rgb/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer4/se_rgb/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_rgb/fc/fc.3/Sigmoid" output_port_id="/se_layer4/se_rgb/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer4/se_rgb/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_rgb/Mul" output_port_id="/se_layer4/se_rgb/Mul_output_0" />
+		<IR name="/se_layer4/se_rgb/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer4.0.conv3x1_1.weight" output_port_id="encoder_depth.layer4.0.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer4.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv3x1_1_1/Conv" output_port_id="/layer4.0/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer4.0/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_4/Relu" output_port_id="/layer4.0/activation_4/Relu_output_0" />
+		<IR name="/layer4.0/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1756" output_port_id="onnx::Conv_1756" />
+		<IR name="onnx::Conv_1756" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv1x3_1_1/Conv" output_port_id="/layer4.0/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer4.0/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_5/Relu" output_port_id="/layer4.0/activation_5/Relu_output_0" />
+		<IR name="/layer4.0/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer4.0.conv3x1_2.weight" output_port_id="encoder_depth.layer4.0.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer4.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv3x1_2_1/Conv" output_port_id="/layer4.0/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer4.0/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_6/Relu" output_port_id="/layer4.0/activation_6/Relu_output_0" />
+		<IR name="/layer4.0/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1759" output_port_id="onnx::Conv_1759" />
+		<IR name="onnx::Conv_1759" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/conv1x3_2_1/Conv" output_port_id="/layer4.0/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer4.0/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1762" output_port_id="onnx::Conv_1762" />
+		<IR name="onnx::Conv_1762" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.0/downsample/downsample.0_1/Conv" output_port_id="/layer4.0/downsample/downsample.0_1/Conv_output_0" />
+		<IR name="/layer4.0/downsample/downsample.0_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0_1/Add" output_port_id="/layer4.0_1/Add_output_0" />
+		<IR name="/layer4.0_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.0/activation_7/Relu" output_port_id="/layer4.0/activation_7/Relu_output_0" />
+		<IR name="/layer4.0/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer4.1.conv3x1_1.weight" output_port_id="encoder_depth.layer4.1.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer4.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv3x1_1_1/Conv" output_port_id="/layer4.1/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer4.1/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_4/Relu" output_port_id="/layer4.1/activation_4/Relu_output_0" />
+		<IR name="/layer4.1/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1765" output_port_id="onnx::Conv_1765" />
+		<IR name="onnx::Conv_1765" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv1x3_1_1/Conv" output_port_id="/layer4.1/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer4.1/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_5/Relu" output_port_id="/layer4.1/activation_5/Relu_output_0" />
+		<IR name="/layer4.1/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer4.1.conv3x1_2.weight" output_port_id="encoder_depth.layer4.1.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer4.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv3x1_2_1/Conv" output_port_id="/layer4.1/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer4.1/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_6/Relu" output_port_id="/layer4.1/activation_6/Relu_output_0" />
+		<IR name="/layer4.1/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1768" output_port_id="onnx::Conv_1768" />
+		<IR name="onnx::Conv_1768" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.1/conv1x3_2_1/Conv" output_port_id="/layer4.1/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer4.1/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1_1/Add" output_port_id="/layer4.1_1/Add_output_0" />
+		<IR name="/layer4.1_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.1/activation_7/Relu" output_port_id="/layer4.1/activation_7/Relu_output_0" />
+		<IR name="/layer4.1/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer4.2.conv3x1_1.weight" output_port_id="encoder_depth.layer4.2.conv3x1_1.weight" />
+		<IR name="encoder_depth.layer4.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv3x1_1_1/Conv" output_port_id="/layer4.2/conv3x1_1_1/Conv_output_0" />
+		<IR name="/layer4.2/conv3x1_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_4/Relu" output_port_id="/layer4.2/activation_4/Relu_output_0" />
+		<IR name="/layer4.2/activation_4/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1771" output_port_id="onnx::Conv_1771" />
+		<IR name="onnx::Conv_1771" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv1x3_1_1/Conv" output_port_id="/layer4.2/conv1x3_1_1/Conv_output_0" />
+		<IR name="/layer4.2/conv1x3_1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_5/Relu" output_port_id="/layer4.2/activation_5/Relu_output_0" />
+		<IR name="/layer4.2/activation_5/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="encoder_depth.layer4.2.conv3x1_2.weight" output_port_id="encoder_depth.layer4.2.conv3x1_2.weight" />
+		<IR name="encoder_depth.layer4.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv3x1_2_1/Conv" output_port_id="/layer4.2/conv3x1_2_1/Conv_output_0" />
+		<IR name="/layer4.2/conv3x1_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_6/Relu" output_port_id="/layer4.2/activation_6/Relu_output_0" />
+		<IR name="/layer4.2/activation_6/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1774" output_port_id="onnx::Conv_1774" />
+		<IR name="onnx::Conv_1774" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/layer4.2/conv1x3_2_1/Conv" output_port_id="/layer4.2/conv1x3_2_1/Conv_output_0" />
+		<IR name="/layer4.2/conv1x3_2_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2_1/Add" output_port_id="/layer4.2_1/Add_output_0" />
+		<IR name="/layer4.2_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/layer4.2/activation_7/Relu" output_port_id="/layer4.2/activation_7/Relu_output_0" />
+		<IR name="/layer4.2/activation_7/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_depth/GlobalAveragePool" output_port_id="/se_layer4/se_depth/GlobalAveragePool_output_0" />
+		<IR name="/se_layer4/se_depth/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="se_layer4.se_depth.fc.0.weight" output_port_id="se_layer4.se_depth.fc.0.weight" />
+		<IR name="se_layer4.se_depth.fc.0.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_depth/fc/fc.0/Conv" output_port_id="/se_layer4/se_depth/fc/fc.0/Conv_output_0" />
+		<IR name="/se_layer4/se_depth/fc/fc.0/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_depth/fc/activation/Relu" output_port_id="/se_layer4/se_depth/fc/activation/Relu_output_0" />
+		<IR name="/se_layer4/se_depth/fc/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="se_layer4.se_depth.fc.2.weight" output_port_id="se_layer4.se_depth.fc.2.weight" />
+		<IR name="se_layer4.se_depth.fc.2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_depth/fc/fc.2/Conv" output_port_id="/se_layer4/se_depth/fc/fc.2/Conv_output_0" />
+		<IR name="/se_layer4/se_depth/fc/fc.2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_depth/fc/fc.3/Sigmoid" output_port_id="/se_layer4/se_depth/fc/fc.3/Sigmoid_output_0" />
+		<IR name="/se_layer4/se_depth/fc/fc.3/Sigmoid" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/se_layer4/se_depth/Mul" output_port_id="/se_layer4/se_depth/Mul_output_0" />
+		<IR name="/se_layer4/se_depth/Mul" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/se_layer4/Add" output_port_id="/se_layer4/Add_output_0" />
+		<IR name="/se_layer4/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/context_module/features.0/features.0.0/GlobalAveragePool" output_port_id="/context_module/features.0/features.0.0/GlobalAveragePool_output_0" />
+		<IR name="/context_module/features.0/features.0.0/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1777" output_port_id="onnx::Conv_1777" />
+		<IR name="onnx::Conv_1777" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/features.0/features.0.1/conv/Conv" output_port_id="/context_module/features.0/features.0.1/conv/Conv_output_0" />
+		<IR name="/context_module/features.0/features.0.1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/context_module/features.0/features.0.1/activation/Relu" output_port_id="/context_module/features.0/features.0.1/activation/Relu_output_0" />
+		<IR name="/context_module/features.0/features.0.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/Shape" output_port_id="/context_module/Shape_output_0" />
+		<IR name="/context_module/Shape" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/Constant_1" output_port_id="/context_module/Constant_1_output_0" />
+		<IR name="/context_module/Constant_1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/context_module/Constant_2" output_port_id="/context_module/Constant_2_output_0" />
+		<IR name="/context_module/Constant_2" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/context_module/Slice" output_port_id="/context_module/Slice_output_0" />
+		<IR name="/context_module/Slice" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/context_module/Constant_3" output_port_id="/context_module/Constant_3_output_0" />
+		<IR name="/context_module/Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/context_module/Concat" output_port_id="/context_module/Concat_output_0" />
+		<IR name="/context_module/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/context_module/Resize" output_port_id="/context_module/Resize_output_0" />
+		<IR name="/context_module/Resize" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/context_module/features.1/features.1.0/AveragePool" output_port_id="/context_module/features.1/features.1.0/AveragePool_output_0" />
+		<IR name="/context_module/features.1/features.1.0/AveragePool" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1780" output_port_id="onnx::Conv_1780" />
+		<IR name="onnx::Conv_1780" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/features.1/features.1.1/conv/Conv" output_port_id="/context_module/features.1/features.1.1/conv/Conv_output_0" />
+		<IR name="/context_module/features.1/features.1.1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/context_module/features.1/features.1.1/activation/Relu" output_port_id="/context_module/features.1/features.1.1/activation/Relu_output_0" />
+		<IR name="/context_module/features.1/features.1.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/Shape_1" output_port_id="/context_module/Shape_1_output_0" />
+		<IR name="/context_module/Shape_1" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/Constant_7" output_port_id="/context_module/Constant_7_output_0" />
+		<IR name="/context_module/Constant_7" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/context_module/Constant_8" output_port_id="/context_module/Constant_8_output_0" />
+		<IR name="/context_module/Constant_8" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/context_module/Slice_1" output_port_id="/context_module/Slice_1_output_0" />
+		<IR name="/context_module/Slice_1" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/context_module/Constant_9" output_port_id="/context_module/Constant_9_output_0" />
+		<IR name="/context_module/Constant_9" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/context_module/Concat_1" output_port_id="/context_module/Concat_1_output_0" />
+		<IR name="/context_module/Concat_1" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/context_module/Resize_1" output_port_id="/context_module/Resize_1_output_0" />
+		<IR name="/context_module/Resize_1" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/context_module/Concat_2" output_port_id="/context_module/Concat_2_output_0" />
+		<IR name="/context_module/Concat_2" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1783" output_port_id="onnx::Conv_1783" />
+		<IR name="onnx::Conv_1783" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/context_module/final_conv/conv/Conv" output_port_id="/context_module/final_conv/conv/Conv_output_0" />
+		<IR name="/context_module/final_conv/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/context_module/final_conv/activation/Relu" output_port_id="/context_module/final_conv/activation/Relu_output_0" />
+		<IR name="/context_module/final_conv/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1786" output_port_id="onnx::Conv_1786" />
+		<IR name="onnx::Conv_1786" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/conv3x3/conv/Conv" output_port_id="/decoder/decoder_module_1/conv3x3/conv/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/conv3x3/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/conv3x3/activation/Relu" output_port_id="/decoder/decoder_module_1/conv3x3/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/conv3x3/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_1.decoder_blocks.0.conv3x1_1.weight" output_port_id="decoder.decoder_module_1.decoder_blocks.0.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_1.decoder_blocks.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1789" output_port_id="onnx::Conv_1789" />
+		<IR name="onnx::Conv_1789" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_1/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_1.decoder_blocks.0.conv3x1_2.weight" output_port_id="decoder.decoder_module_1.decoder_blocks.0.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_1.decoder_blocks.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_2/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1792" output_port_id="onnx::Conv_1792" />
+		<IR name="onnx::Conv_1792" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/Add" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/Add_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_3/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_1.decoder_blocks.1.conv3x1_1.weight" output_port_id="decoder.decoder_module_1.decoder_blocks.1.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_1.decoder_blocks.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1795" output_port_id="onnx::Conv_1795" />
+		<IR name="onnx::Conv_1795" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_1/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_1.decoder_blocks.1.conv3x1_2.weight" output_port_id="decoder.decoder_module_1.decoder_blocks.1.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_1.decoder_blocks.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_2/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1798" output_port_id="onnx::Conv_1798" />
+		<IR name="onnx::Conv_1798" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/Add" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/Add_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_3/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_1.decoder_blocks.2.conv3x1_1.weight" output_port_id="decoder.decoder_module_1.decoder_blocks.2.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_1.decoder_blocks.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1801" output_port_id="onnx::Conv_1801" />
+		<IR name="onnx::Conv_1801" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_1/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_1.decoder_blocks.2.conv3x1_2.weight" output_port_id="decoder.decoder_module_1.decoder_blocks.2.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_1.decoder_blocks.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_2/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1804" output_port_id="onnx::Conv_1804" />
+		<IR name="onnx::Conv_1804" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/Add" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/Add_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_3/Relu" output_port_id="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_1/decoder_blocks/decoder_blocks.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Shape" output_port_id="/decoder/decoder_module_1/upsample/Shape_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Shape" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Constant_1" output_port_id="/decoder/decoder_module_1/upsample/Constant_1_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Constant_1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Constant_2" output_port_id="/decoder/decoder_module_1/upsample/Constant_2_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Constant_2" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Slice" output_port_id="/decoder/decoder_module_1/upsample/Slice_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Slice" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Constant_3" output_port_id="/decoder/decoder_module_1/upsample/Constant_3_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Concat" output_port_id="/decoder/decoder_module_1/upsample/Concat_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/Resize" output_port_id="/decoder/decoder_module_1/upsample/Resize_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/Resize" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/upsample/conv/Conv" output_port_id="/decoder/decoder_module_1/upsample/conv/Conv_output_0" />
+		<IR name="/decoder/decoder_module_1/upsample/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1732" output_port_id="onnx::Conv_1732" />
+		<IR name="onnx::Conv_1732" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/skip_layer3/skip_layer3.0/conv/Conv" output_port_id="/skip_layer3/skip_layer3.0/conv/Conv_output_0" />
+		<IR name="/skip_layer3/skip_layer3.0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/skip_layer3/skip_layer3.0/activation/Relu" output_port_id="/skip_layer3/skip_layer3.0/activation/Relu_output_0" />
+		<IR name="/skip_layer3/skip_layer3.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_1/Add" output_port_id="/decoder/decoder_module_1/Add_output_0" />
+		<IR name="/decoder/decoder_module_1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1807" output_port_id="onnx::Conv_1807" />
+		<IR name="onnx::Conv_1807" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/conv3x3/conv/Conv" output_port_id="/decoder/decoder_module_2/conv3x3/conv/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/conv3x3/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/conv3x3/activation/Relu" output_port_id="/decoder/decoder_module_2/conv3x3/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/conv3x3/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_2.decoder_blocks.0.conv3x1_1.weight" output_port_id="decoder.decoder_module_2.decoder_blocks.0.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_2.decoder_blocks.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1810" output_port_id="onnx::Conv_1810" />
+		<IR name="onnx::Conv_1810" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_1/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_2.decoder_blocks.0.conv3x1_2.weight" output_port_id="decoder.decoder_module_2.decoder_blocks.0.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_2.decoder_blocks.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_2/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1813" output_port_id="onnx::Conv_1813" />
+		<IR name="onnx::Conv_1813" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/Add" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/Add_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_3/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_2.decoder_blocks.1.conv3x1_1.weight" output_port_id="decoder.decoder_module_2.decoder_blocks.1.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_2.decoder_blocks.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1816" output_port_id="onnx::Conv_1816" />
+		<IR name="onnx::Conv_1816" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_1/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_2.decoder_blocks.1.conv3x1_2.weight" output_port_id="decoder.decoder_module_2.decoder_blocks.1.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_2.decoder_blocks.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_2/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1819" output_port_id="onnx::Conv_1819" />
+		<IR name="onnx::Conv_1819" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/Add" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/Add_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_3/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_2.decoder_blocks.2.conv3x1_1.weight" output_port_id="decoder.decoder_module_2.decoder_blocks.2.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_2.decoder_blocks.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1822" output_port_id="onnx::Conv_1822" />
+		<IR name="onnx::Conv_1822" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_1/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_2.decoder_blocks.2.conv3x1_2.weight" output_port_id="decoder.decoder_module_2.decoder_blocks.2.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_2.decoder_blocks.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_2/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1825" output_port_id="onnx::Conv_1825" />
+		<IR name="onnx::Conv_1825" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/Add" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/Add_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_3/Relu" output_port_id="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_2/decoder_blocks/decoder_blocks.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Shape" output_port_id="/decoder/decoder_module_2/upsample/Shape_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Shape" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Constant_1" output_port_id="/decoder/decoder_module_2/upsample/Constant_1_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Constant_1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Constant_2" output_port_id="/decoder/decoder_module_2/upsample/Constant_2_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Constant_2" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Slice" output_port_id="/decoder/decoder_module_2/upsample/Slice_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Slice" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Constant_3" output_port_id="/decoder/decoder_module_2/upsample/Constant_3_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Concat" output_port_id="/decoder/decoder_module_2/upsample/Concat_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/Resize" output_port_id="/decoder/decoder_module_2/upsample/Resize_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/Resize" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/upsample/conv/Conv" output_port_id="/decoder/decoder_module_2/upsample/conv/Conv_output_0" />
+		<IR name="/decoder/decoder_module_2/upsample/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1651" output_port_id="onnx::Conv_1651" />
+		<IR name="onnx::Conv_1651" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/skip_layer2/skip_layer2.0/conv/Conv" output_port_id="/skip_layer2/skip_layer2.0/conv/Conv_output_0" />
+		<IR name="/skip_layer2/skip_layer2.0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/skip_layer2/skip_layer2.0/activation/Relu" output_port_id="/skip_layer2/skip_layer2.0/activation/Relu_output_0" />
+		<IR name="/skip_layer2/skip_layer2.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_2/Add" output_port_id="/decoder/decoder_module_2/Add_output_0" />
+		<IR name="/decoder/decoder_module_2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1828" output_port_id="onnx::Conv_1828" />
+		<IR name="onnx::Conv_1828" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/conv3x3/conv/Conv" output_port_id="/decoder/decoder_module_3/conv3x3/conv/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/conv3x3/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/conv3x3/activation/Relu" output_port_id="/decoder/decoder_module_3/conv3x3/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/conv3x3/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_3.decoder_blocks.0.conv3x1_1.weight" output_port_id="decoder.decoder_module_3.decoder_blocks.0.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_3.decoder_blocks.0.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1831" output_port_id="onnx::Conv_1831" />
+		<IR name="onnx::Conv_1831" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_1/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_3.decoder_blocks.0.conv3x1_2.weight" output_port_id="decoder.decoder_module_3.decoder_blocks.0.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_3.decoder_blocks.0.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_2/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1834" output_port_id="onnx::Conv_1834" />
+		<IR name="onnx::Conv_1834" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/Add" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/Add_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_3/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.0/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_3.decoder_blocks.1.conv3x1_1.weight" output_port_id="decoder.decoder_module_3.decoder_blocks.1.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_3.decoder_blocks.1.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1837" output_port_id="onnx::Conv_1837" />
+		<IR name="onnx::Conv_1837" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_1/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_3.decoder_blocks.1.conv3x1_2.weight" output_port_id="decoder.decoder_module_3.decoder_blocks.1.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_3.decoder_blocks.1.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_2/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1840" output_port_id="onnx::Conv_1840" />
+		<IR name="onnx::Conv_1840" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/Add" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/Add_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_3/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.1/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_3.decoder_blocks.2.conv3x1_1.weight" output_port_id="decoder.decoder_module_3.decoder_blocks.2.conv3x1_1.weight" />
+		<IR name="decoder.decoder_module_3.decoder_blocks.2.conv3x1_1.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv3x1_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1843" output_port_id="onnx::Conv_1843" />
+		<IR name="onnx::Conv_1843" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv1x3_1/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_1/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_1/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_1/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="decoder.decoder_module_3.decoder_blocks.2.conv3x1_2.weight" output_port_id="decoder.decoder_module_3.decoder_blocks.2.conv3x1_2.weight" />
+		<IR name="decoder.decoder_module_3.decoder_blocks.2.conv3x1_2.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv3x1_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_2/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_2/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_2/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1846" output_port_id="onnx::Conv_1846" />
+		<IR name="onnx::Conv_1846" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/conv1x3_2/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/Add" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/Add_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_3/Relu" output_port_id="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_3/Relu_output_0" />
+		<IR name="/decoder/decoder_module_3/decoder_blocks/decoder_blocks.2/activation_3/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Shape" output_port_id="/decoder/decoder_module_3/upsample/Shape_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Shape" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Constant_1" output_port_id="/decoder/decoder_module_3/upsample/Constant_1_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Constant_1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Constant_2" output_port_id="/decoder/decoder_module_3/upsample/Constant_2_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Constant_2" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Slice" output_port_id="/decoder/decoder_module_3/upsample/Slice_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Slice" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Constant_3" output_port_id="/decoder/decoder_module_3/upsample/Constant_3_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Concat" output_port_id="/decoder/decoder_module_3/upsample/Concat_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/Resize" output_port_id="/decoder/decoder_module_3/upsample/Resize_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/Resize" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/upsample/conv/Conv" output_port_id="/decoder/decoder_module_3/upsample/conv/Conv_output_0" />
+		<IR name="/decoder/decoder_module_3/upsample/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_1594" output_port_id="onnx::Conv_1594" />
+		<IR name="onnx::Conv_1594" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/skip_layer1/skip_layer1.0/conv/Conv" output_port_id="/skip_layer1/skip_layer1.0/conv/Conv_output_0" />
+		<IR name="/skip_layer1/skip_layer1.0/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/skip_layer1/skip_layer1.0/activation/Relu" output_port_id="/skip_layer1/skip_layer1.0/activation/Relu_output_0" />
+		<IR name="/skip_layer1/skip_layer1.0/activation/Relu" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/decoder_module_3/Add" output_port_id="/decoder/decoder_module_3/Add_output_0" />
+		<IR name="/decoder/decoder_module_3/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="decoder.conv_out.weight" output_port_id="decoder.conv_out.weight" />
+		<IR name="decoder.conv_out.weight" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/conv_out/Conv" output_port_id="/decoder/conv_out/Conv_output_0" />
+		<IR name="/decoder/conv_out/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Shape" output_port_id="/decoder/upsample1/Shape_output_0" />
+		<IR name="/decoder/upsample1/Shape" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Constant_1" output_port_id="/decoder/upsample1/Constant_1_output_0" />
+		<IR name="/decoder/upsample1/Constant_1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Constant_2" output_port_id="/decoder/upsample1/Constant_2_output_0" />
+		<IR name="/decoder/upsample1/Constant_2" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Slice" output_port_id="/decoder/upsample1/Slice_output_0" />
+		<IR name="/decoder/upsample1/Slice" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Constant_3" output_port_id="/decoder/upsample1/Constant_3_output_0" />
+		<IR name="/decoder/upsample1/Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Concat" output_port_id="/decoder/upsample1/Concat_output_0" />
+		<IR name="/decoder/upsample1/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/Resize" output_port_id="/decoder/upsample1/Resize_output_0" />
+		<IR name="/decoder/upsample1/Resize" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample1/conv/Conv" output_port_id="/decoder/upsample1/conv/Conv_output_0" />
+		<IR name="/decoder/upsample1/conv/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Shape" output_port_id="/decoder/upsample2/Shape_output_0" />
+		<IR name="/decoder/upsample2/Shape" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Constant_1" output_port_id="/decoder/upsample2/Constant_1_output_0" />
+		<IR name="/decoder/upsample2/Constant_1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Constant_2" output_port_id="/decoder/upsample2/Constant_2_output_0" />
+		<IR name="/decoder/upsample2/Constant_2" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Slice" output_port_id="/decoder/upsample2/Slice_output_0" />
+		<IR name="/decoder/upsample2/Slice" output_port_id="4" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Constant_3" output_port_id="/decoder/upsample2/Constant_3_output_0" />
+		<IR name="/decoder/upsample2/Constant_3" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Concat" output_port_id="/decoder/upsample2/Concat_output_0" />
+		<IR name="/decoder/upsample2/Concat" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/decoder/upsample2/Resize" output_port_id="/decoder/upsample2/Resize_output_0" />
+		<IR name="/decoder/upsample2/Resize" output_port_id="3" />
+	</map>
+	<map>
+		<framework name="output" output_port_id="output" />
+		<IR name="output" output_port_id="2" />
+	</map>
+</mapping>
