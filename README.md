@@ -4,23 +4,23 @@ This project demonstrates real-time semantic segmentation using a RealSense dept
 
 ## Key Features:
 
-    Utilizes the RealSense camera to capture color and depth frames.
-    Integrates OpenVINO to perform real-time semantic segmentation using a pre-trained model.
-    Visualizes the segmentation results overlaid on color frames.
-    Creates a 3D point cloud visualization by combining segmented images and depth data.
-    Provides average inference time metrics for performance evaluation.
+* Utilizes the RealSense camera to capture color and depth frames.
+* Integrates OpenVINO to perform real-time semantic segmentation using a pre-trained model.
+* Visualizes the segmentation results overlaid on color frames.
+* Creates a 3D point cloud visualization by combining segmented images and depth data.
+* Provides average inference time metrics for performance evaluation.
 
 ##  Usage:
 
-    Ensure all required dependencies (RealSense SDK, OpenVINO, Open3D) are properly installed.
-    Configure the model path, device settings, and other parameters as needed.
-    Run the Python script, and it will start capturing and processing frames.
-    Press 'q' to exit the application.
+* Ensure all required dependencies (RealSense SDK, OpenVINO, Open3D) are properly installed.
+* Configure the model path, device settings, and other parameters as needed.
+* Run the Python script, and it will start capturing and processing frames.
+* Press 'q' to exit the application.
 
 ##  Contributing:
 Contributions and enhancements to this project are welcome. Please submit issues and pull requests if you find bugs or have ideas for improvements.
 
 ##  Acknowledgments:
 
-    Credits to the RealSense, OpenVINO, and Open3D communities for their contributions and open-source libraries.
-    Original [ESANET Repository ]([url](https://github.com/TUI-NICR/ESANet)https://github.com/TUI-NICR/ESANet) implementation
+* Credits to the RealSense, OpenVINO, and Open3D communities for their contributions and open-source libraries.
+* Original [ESANET Repository ]([url](https://github.com/TUI-NICR/ESANet)https://github.com/TUI-NICR/ESANet) implementation
